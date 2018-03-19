@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
     <title>Дипломный проект по курсу "Адаптивная и мобильная вёрстка"</title>
   </head>
@@ -46,7 +47,11 @@
 
     <section class="athlets">
       <div class="picture">
-        <img src="images/footballer.png" alt="footballer">
+        <picture>
+          <source srcset="images/footballer-768.png" media="(max-width: 960px)">
+          <source srcset="images/footballer-768.png" media="(max-width: 320px)">
+          <img src="images/footballer.png" alt="footballer">
+        </picture>
       </div>
       <div class="athlets_connection">
         <h2>Athlets</h2>
@@ -101,12 +106,16 @@
         <p>Save your time, recruit proper athlets for your team.</p>
       </div>
       <div class="picture">
-        <img src="images/player.png" alt="player">
+        <picture>
+          <source srcset="images/player-768.png" media="(max-width: 960px)">
+          <source srcset="images/player-768.png" media="(max-width: 320px)">
+          <img src="images/player.png" alt="player">
+        </picture>
       </div>
     </section>
 
     <section class="rules">
-      <div class="rule">
+      <div class="rule be">
         <img src="images/rule1.png" alt="Be active">
         <div class="text">
           <h2>Be active</h2>
@@ -116,8 +125,8 @@
           <div>01</div>
         </div>
       </div>
-      <div class="rule">
-        <img src="images/rule2.png" alt="Be active">
+      <div class="rule find">
+        <img src="images/rule2.png" alt="Find contact">
         <div class="text">
           <h2>Find contact</h2>
           <p>Contact others to find right coach or athlete you are looking for.</p>
@@ -127,8 +136,8 @@
         </div>
       </div>
       </div>
-      <div class="rule">
-        <img src="images/rule3.png" alt="Be active">
+      <div class="rule work">
+        <img src="images/rule3.png" alt="Work it">
         <div class="text">
           <h2>Work it</h2>
           <p>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to

@@ -169,7 +169,7 @@ p {
   left: 0;
 }
 
-.athlets .picture img {
+.athlets .picture picture {
   position: absolute;
   right: 50px;
   top: 0;
@@ -257,7 +257,7 @@ p {
   padding: 0;
 }
 
-.players .picture img {
+.players .picture picture {
   position: absolute;
   left: -8vw;
   top: 0;
@@ -372,4 +372,194 @@ footer .surface {
 footer .logo {
   margin-top: 13.7vw;
   margin-left: 44vw;
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    background-image: url("../images/header-background-768.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 64px;
+    letter-spacing: 5px;
+    margin: 180px 10.9vw 310px 16vw;
+  }
+
+  h1 div:first-child {
+    font-weight: normal;
+  }
+
+  h1 div:last-child {
+    margin-left: 9.6vw;
+  }
+
+  .athlets > div {
+    box-sizing: border-box;
+    padding-left: 37.5%;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .athlets_connection {
+    box-sizing: border-box;
+    padding-top: 86px;
+    padding-bottom: 74px;
+  }
+
+  .athlets_connection h3 {
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+
+  .athlets_collaboration {
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .athlets_collaboration h3 {
+    margin-bottom: 32px;
+  }
+
+  .athlets_growth {
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-bottom: 67px;
+  }
+
+  .athlets_growth h3 {
+    margin-bottom: 32px;
+  }
+
+  .athlets .picture picture {
+    left: 0;
+    top: 88px;
+    height: 100%;
+  }
+
+  .players_connection {
+    box-sizing: border-box;
+    padding-top: 82px;
+    padding-bottom: 49px;
+  }
+
+  .players_connection h3 {
+    margin-top: 61px;
+    margin-bottom: 34px;
+  }
+
+  .players_collaboration {
+    box-sizing: border-box;
+    padding-top: 63px;
+    padding-bottom: 74px;
+  }
+
+  .players_collaboration h3 {
+    margin-bottom: 33px;
+  }
+
+  .players_growth {
+    box-sizing: border-box;
+    padding-top: 54px;
+    padding-bottom: 53px;
+  }
+
+  .players_growth h3 {
+    margin-bottom: 32px;
+  }
+
+  .players .picture picture {
+    left: -6.5vw;
+    top: 0;
+  }
+
+  .rule {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rule img {
+    width: 100vw;
+    height: 75.9vw;
+  }
+
+  .rule .text {
+    width: 100vw;
+    height: auto;
+  }
+
+  .rule:nth-child(even) img {
+    order: 0;
+  }
+
+  .be .text {
+    box-sizing: border-box;
+    padding-top: 93px;
+    padding-bottom: 102px;
+  }
+
+  .find .text {
+    box-sizing: border-box;
+    padding-top: 82px;
+    padding-bottom: 109px;
+  }
+
+  .work .text {
+    box-sizing: border-box;
+    padding-top: 82px;
+    padding-bottom: 115px;
+  }
+
+  .rule .number {
+    width: 15.1vw;
+    height: 15.1vw;
+    top: calc(75.9vw - 10.6vw);
+    left: 4.3vw;
+    margin-left: 0;
+  }
+
+  footer {
+    box-sizing: border-box;
+    padding: 125px 4.3vw 21px;
+  }
+
+  footer .app {
+    margin: 0;
+  }
+
+  footer .icon {
+    width: 16.9vw;
+    height: 17.6vw;
+    float: none;
+    margin: 0 auto 74px;
+  }
+
+  footer .surface {
+    width: 13.4vw;
+    height: 11.1vw;
+  }
+
+  footer h2 {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0 auto 278px;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin: 46px auto 16px;
+    display: flex;
+    justify-content: center;
+  }
 }
