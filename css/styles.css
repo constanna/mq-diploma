@@ -171,6 +171,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  padding: 0;
 }
 
 .athlets .picture picture {
@@ -178,7 +179,6 @@ p {
   right: 50px;
   top: 0;
   height: 100%;
-  width: 100%;
 }
 
 .athlets_connection {
@@ -414,7 +414,7 @@ footer .logo svg {
   }
 }
 
-@media screen and (max-width: 960px) and (min-width: 640px) {
+@media screen and (max-width: 960px) and (min-width: 641px) {
   header {
     background-image: url("../images/header-background-768.png");
     background-repeat: no-repeat;
@@ -513,7 +513,8 @@ footer .logo svg {
   }
 
   .players .picture picture {
-    left: -6.5vw;
+    left: auto;
+    right: 0;
     top: 0;
   }
 
@@ -663,10 +664,11 @@ footer .logo svg {
   }
 
   .athlets .picture picture {
-    /* left: 0;
-    top: 88px; */
-    height: 89.7vw;
-    width: 54.4vw;
+    top: 80px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
   .athlets h2 {
@@ -698,6 +700,18 @@ footer .logo svg {
 
   .players h2 {
     margin-bottom: 325px;
+  }
+
+  .players .picture {
+    width: 100%;
+  }
+
+  .players .picture picture {
+    top: 84px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
   .players .players_connection {
