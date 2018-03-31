@@ -64,11 +64,14 @@ h1 {
   margin: 296px 3.1vw 221px 0.8vw;
 }
 
-h1 div:last-child {
+h1 span {
+  display: block;
+}
+
+h1 span span {
   align-self: flex-end;
   font-weight: bold;
-  padding-left: 10vw;
-  box-sizing: border-box;
+  margin-left: 10vw;
 }
 
 .download {
@@ -89,6 +92,11 @@ a {
   margin: 0 25px;
   display: flex;
   align-items: center;
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-color: #2a1d4f;
 }
 
 a svg {
@@ -143,6 +151,7 @@ h3 .number {
   margin-right: 14px;
   padding-top: 4px;
   height: 36px;
+  display: block;
 }
 
 h3 .number::before {
@@ -425,15 +434,13 @@ footer .logo svg {
 
   h1 {
     font-size: 64px;
+    font-weight: bold;
     letter-spacing: 5px;
-    margin: 180px 10.9vw 310px 16vw;
+    line-height: 80px;
+    margin: 180px 3vw 310px 4vw;
   }
 
-  h1 div:first-child {
-    font-weight: normal;
-  }
-
-  h1 div:last-child {
+  h1 span span {
     margin-left: 9.6vw;
   }
 
@@ -615,12 +622,13 @@ footer .logo svg {
 
   h1 {
     font-size: 28px;
-    margin-left: 4.7vw;
-    margin-right: 7.2vw;
+    font-weight: bold;
+    margin: 136px 7.2vw 90px 4.7vw;
   }
 
-  h1 > div:first-child {
-    margin-bottom: 30px;
+  h1 span span {
+    margin-top: 75px;
+    font-weight: normal;
   }
 
   h2 {
@@ -638,11 +646,11 @@ footer .logo svg {
 
   .download {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
 
   .download a {
-    width: 100%;
+    max-width: 300px;
     height: 35px;
     margin: 15px 0 0;
     box-sizing: border-box;
@@ -810,6 +818,12 @@ footer .logo svg {
     height: 15vw;
   }
 
+  footer .download {
+    margin-top: 77px;
+    margin-bottom: 86px;
+    padding: 0;
+  }
+
   footer h2 {
     font-size: 32px;
     margin: 0 auto 13px;
@@ -818,7 +832,7 @@ footer .logo svg {
 
   footer p {
     font-size: 14px;
-    margin: 0 auto 77px;
+    margin: 0 auto 0;
     text-align: center;
   }
 
