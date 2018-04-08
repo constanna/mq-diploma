@@ -423,6 +423,12 @@ footer .logo svg {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  h1 span span {
+    text-align: right;
+  }
+}
+
 @media screen and (max-width: 960px) and (min-width: 641px) {
   header {
     background-image: url("../images/header-background-768.png");
@@ -442,6 +448,7 @@ footer .logo svg {
 
   h1 span span {
     margin-left: 9.6vw;
+    font-weight: normal;
   }
 
   h3 {
@@ -627,7 +634,7 @@ footer .logo svg {
   }
 
   h1 span span {
-    margin-top: 75px;
+    margin-top: 30px;
     font-weight: normal;
   }
 
@@ -650,11 +657,13 @@ footer .logo svg {
   }
 
   .download a {
-    max-width: 300px;
+    width: 300px;
     height: 35px;
+    max-width: 87.5vw;
     margin: 15px 0 0;
     box-sizing: border-box;
-    padding-left: 26vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
   }
 
   .download a div {
